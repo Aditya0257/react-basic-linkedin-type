@@ -1,46 +1,56 @@
-# Getting Started with Create React App and Redux
+# React-Firebase-Homepage
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+## Description
 
-## Available Scripts
+This is a basic homepage project built using React, Redux, Sass, and Firebase integration. It allows users to sign up, log in, and log out using Firebase authentication. Users can also add new posts, which are displayed in a feed using Firestore for data storage. The project includes animations using the React Flip Move library.
 
-In the project directory, you can run:
+## Screenshots
 
-### `npm start`
+![Homepage](https://github.com/Aditya0257/react-firebase-homepage/blob/main/homepage.png?raw=true)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- User authentication (sign up, log in, log out) using Firebase
+- Adding new posts to Firestore database
+- Displaying posts in a feed with animations
+- Responsive design with Sass
 
-### `npm test`
+## Setup
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository:
 
-### `npm run build`
+```bash
+git clone https://github.com/your-username/your-repo.git
+cd your-repo
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Install dependencies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+npm install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Create a Firebase project and set up authentication and Firestore database.
 
-### `npm run eject`
+4. Create a .env file in the root of the project and add your Firebase configuration:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```env
+REACT_APP_API_KEY=YOUR_API_KEY
+REACT_APP_AUTH_DOMAIN=YOUR_AUTH_DOMAIN
+REACT_APP_PROJECT_ID=YOUR_PROJECT_ID
+REACT_APP_STORAGE_BUCKET=YOUR_STORAGE_BUCKET
+REACT_APP_MESSAGING_SENDER_ID=YOUR_MESSAGING_SENDER_ID
+REACT_APP_APP_ID=YOUR_APP_ID
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Usage
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+To start the development server:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+npm start
+```
 
-## Learn More
+## License
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+This project is licensed under the MIT License - see the LICENSE file for details.
