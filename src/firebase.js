@@ -1,6 +1,14 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 import { getAuth } from "firebase/auth";
+// import { config } from "dotenv";
+
+// config();
+
+/*
+ By prefixing your environment variable names with REACT_APP_, you don't need to use dotenv or 
+ install any additional packages. 
+*/
 
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
