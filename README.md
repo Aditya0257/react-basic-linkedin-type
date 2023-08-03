@@ -21,7 +21,7 @@ This is a basic homepage project built using React, Redux, Sass, and Firebase in
 
 ```bash
 git clone https://github.com/Aditya0257/react-firebase-homepage.git
-cd your-repo
+cd react-firebase-homepage
 ```
 
 2. Install dependencies:
