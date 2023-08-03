@@ -4,6 +4,9 @@
 
 This is a basic homepage project built using React, Redux, Sass, and Firebase integration. It allows users to sign up, log in, and log out using Firebase authentication. Users can also add new posts, which are displayed in a feed using Firestore for data storage. The project includes animations using the React Flip Move library.
 
+## My Hosted Application
+Check out my hosted application [here](https://react-firebase-homepage.web.app).
+
 ## Screenshots
 
 ![Homepage](https://github.com/Aditya0257/react-firebase-homepage/blob/main/homepage.png?raw=true)
