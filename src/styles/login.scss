@@ -76,19 +76,85 @@
                 box-shadow: 0 0 3px rgba(0, 0, 0, 0.2), 0 0 5px #007bff; // Medium blue outline color
             }
         }
-    }
 
-    .login__form_name {
-        display: flex;
-        justify-content: space-between;
-
-        .login__form_Fname {
+        .login__form_name {
+            display: flex;
+            justify-content: space-between;
+            input{
+                max-width: 140px;
+            }
+    
+            .login__form_Fname {
+                
+                position: relative;
+    
+                label {
+                    @include label-common-styles();
+                }
+    
+                &.active label {
+                    top: 10px;
+                    font-size: 10px;
+                    color: #007bff;
+                    padding: 0 5px;
+                    background: none;
+                }
+    
+                .login__label_icon {
+                    position: absolute;
+                    top: 20%;
+                    right: 15px;
+                    font-size: 20px;
+                    pointer-events: none;
+                    color: #9BA4B5;
+                }
+    
+            }
+    
+            .login__form_Lname {
+                position: relative;
+    
+    
+                label {
+                    @include label-common-styles();
+                }
+    
+                &.active label {
+                    top: 10px;
+                    font-size: 10px;
+                    color: #007bff;
+                    padding: 0 5px;
+                    background: none;
+                }
+    
+                .login__label_icon {
+                    position: absolute;
+                    top: 20%;
+                    right: 15px;
+                    font-size: 20px;
+                    pointer-events: none;
+                    color: #9BA4B5;
+                }
+    
+            }
+    
+        }
+    
+        // Common styles for form elements containing an input and label
+        .login__form_email,
+        .login__form_password {
             position: relative;
-
+            display: flex;
+    
+            input {
+                width: calc(100% - 40px); // Account for left and right padding
+            }
+    
             label {
                 @include label-common-styles();
             }
-
+    
+    
             &.active label {
                 top: 10px;
                 font-size: 10px;
@@ -96,7 +162,7 @@
                 padding: 0 5px;
                 background: none;
             }
-
+    
             .login__label_icon {
                 position: absolute;
                 top: 20%;
@@ -105,87 +171,25 @@
                 pointer-events: none;
                 color: #9BA4B5;
             }
-
         }
-
-        .login__form_Lname {
-            position: relative;
-
-
-            label {
-                @include label-common-styles();
+    
+        .login__form_button {
+            margin-top: 20px;
+            display: flex;
+            justify-content: flex-start;
+    
+            button {
+                min-width: 200px;
+                padding: 16px 35px 16px 35px;
+                border: none;
+                border-radius: 25px;
+                font-weight: 600;
+                font-size: 14px;
+                background-color: #1d90f5;
+                color: white;
             }
-
-            &.active label {
-                top: 10px;
-                font-size: 10px;
-                color: #007bff;
-                padding: 0 5px;
-                background: none;
-            }
-
-            .login__label_icon {
-                position: absolute;
-                top: 20%;
-                right: 15px;
-                font-size: 20px;
-                pointer-events: none;
-                color: #9BA4B5;
-            }
-
+    
         }
-
-    }
-
-    // Common styles for form elements containing an input and label
-    .login__form_email,
-    .login__form_password {
-        position: relative;
-        display: flex;
-
-        input {
-            width: calc(100% - 40px); // Account for left and right padding
-        }
-
-        label {
-            @include label-common-styles();
-        }
-
-
-        &.active label {
-            top: 10px;
-            font-size: 10px;
-            color: #007bff;
-            padding: 0 5px;
-            background: none;
-        }
-
-        .login__label_icon {
-            position: absolute;
-            top: 20%;
-            right: 15px;
-            font-size: 20px;
-            pointer-events: none;
-            color: #9BA4B5;
-        }
-    }
-
-    .login__form_button {
-        margin-top: 20px;
-        display: flex;
-        justify-content: flex-start;
-
-        button {
-            min-width: 200px;
-            padding: 16px 35px 16px 35px;
-            border: none;
-            border-radius: 25px;
-            font-weight: 600;
-            font-size: 14px;
-            background-color: #1d90f5;
-            color: white;
-        }
-
     }
 
 }
