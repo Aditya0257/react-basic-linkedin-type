@@ -1,0 +1,55 @@
+.widget{
+    position: sticky;
+    top: 80px;
+    height: fit-content;
+    flex: 0.3;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    padding-bottom: 10px;
+
+    .widgets__header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+
+        h2{
+            font-size: 18px;
+            font-weight: 500;
+        }
+    }
+
+    .widgets__article{
+        display: flex;
+        padding: 10px;
+        cursor: pointer;
+
+        .widgets__articleLeft{
+            color: #0177b7;
+            margin-right: 5px;
+
+            .MuiSvgIcon-root{
+                font-size: 15px;
+            }
+        }
+
+        .widgets__articleRight{
+            color: black;
+            flex: 1;
+
+            h4{
+                font-size: 14px;
+            }
+
+            p{
+                font-size: 12px;
+                color: gray;
+            }
+        }
+
+        &:hover{
+            background-color: whitesmoke;
+        }
+    }
+}

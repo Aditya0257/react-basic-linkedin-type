@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=REM:wght@100;200;400&display=swap');
+
+.body{
+    font-family: 'REM', sans-serif;
+}
+
+.app{
+    background-color: #f3f2ef;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app__body{
+    width: 80%;
+    display: flex;
+    margin-top: 35px;
+    max-width: 1200px;
+}
