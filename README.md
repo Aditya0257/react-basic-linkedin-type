@@ -18,6 +18,13 @@ Check out my hosted application [here](https://react-firebase-homepage.web.app).
 - Displaying posts in a feed with animations
 - Responsive design with Sass
 
+## Starter template command
+
+```bash
+//npx create-react-app my-app --template [template-name]
+npx create-react-app <projectName> --template redux
+```
+
 ## Setup
 
 1. Clone the repository:
