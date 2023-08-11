@@ -20,8 +20,8 @@ Check out my hosted application [here](https://react-firebase-homepage.web.app).
 
 ## Starter template command
 
+// npx create-react-app my-app --template [template-name]
 ```bash
-//npx create-react-app my-app --template [template-name]
 npx create-react-app <projectName> --template redux
 ```
 
